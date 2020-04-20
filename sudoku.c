@@ -113,16 +113,8 @@ int main(int argc, char *argv[])
 {
     printf("argc %d\n", argc);
     if (argc > 1)
-    {
-        for (int i = 0; i < argc; i++)
-            printf("%d \t %s \n", i, argv[i]);
-        printf("\n");
         if (strcmp(argv[1], "--slow") == 0)
-        {
-            printf("slow mode\n");
             immediate = 0;
-        }
-    }
     else
         immediate = 1;
 
